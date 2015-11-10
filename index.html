@@ -1,0 +1,88 @@
+---
+layout: default
+---
+
+<!-- One -->
+<section id="one">
+  <header class="major">
+    <h2>Hello!</h2>
+  </header>
+  <p>My name is <b>Robert-Jan Keizer</b> and I'm interested in nearly everything that's related to programming and/or unix-like systems. To see more about my knowledge check out <a href="#skills">my skills</a></p>
+  <ul class="actions">
+    <!-- <li><a href="#" class="button">Learn More</a></li> -->
+  </ul>
+</section>
+
+<!-- Two -->
+<section id="two">
+  <h2>Portfolio</h2>
+  <div class="row">
+    {% for post in site.posts %}
+      <article class="6u 12u$(xsmall) work-item">
+      <!--  {{ post.url | prepend: site.baseurl }} -->
+        <a href="assets/images/fulls/01.jpg" class="image fit thumb"><img src="assets/images/thumbs/01.jpg" alt="" /></a>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.title }} | {{ post.date | date: "%b %-d, %Y" }}</p>
+      </article>
+    {% endfor %}
+    <article class="6u$ 12u$(xsmall) work-item">
+      <a href="assets/images/fulls/06.jpg" class="image fit thumb"><img src="assets/images/thumbs/06.jpg" alt="" /></a>
+      <h3>Risus ornare lacinia</h3>
+      <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+    </article>
+  </div>
+  <ul class="actions">
+    <li><a href="#" class="button">Full Portfolio</a></li>
+  </ul>
+</section>
+
+
+<!-- Two -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="row">
+    {% for post in site.posts %}
+      <article class="6u 12u$(xsmall) work-item">
+      <!--  {{ post.url | prepend: site.baseurl }} -->
+        <a href="assets/images/fulls/01.jpg" class="image fit thumb"><img src="assets/images/thumbs/01.jpg" alt="" /></a>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.title }} | {{ post.date | date: "%b %-d, %Y" }}</p>
+      </article>
+    {% endfor %}
+    <article class="6u$ 12u$(xsmall) work-item">
+      <a href="assets/images/fulls/06.jpg" class="image fit thumb"><img src="assets/images/thumbs/06.jpg" alt="" /></a>
+      <h3>Risus ornare lacinia</h3>
+      <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+    </article>
+  </div>
+  <ul class="actions">
+    <li><a href="#" class="button">Full Portfolio</a></li>
+  </ul>
+</section>
+
+<!-- Three -->
+<section id="three">
+  <h2>Get In Touch</h2>
+  <p>I'm always open for new projects, stuff or if you just want to talk. Don't hesitate to mail me!</p>
+  <div class="row">
+ <!-- <div class="8u 12u$(small)">
+ 
+    </div> -->    
+    <div class="4u$ 12u$(small)">
+      <ul class="labeled-icons">
+        <li>
+          <h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+          <a href="mailto:robertjankeizer@gmail.com">robertjankeizer@gmail.com</a>
+        </li>
+        <li>
+          <h3 class="icon fa-twitter"><span class="label">Twitter</span></h3>
+          <a href="http://twitter.com/KeizerDev">@KeizerDev</a>
+        </li>
+        <li>
+          <h3 class="icon fa-github"><span class="label">Phone</span></h3>
+          <a href="http://github.com/KeizerDev">KeizerDev</a>         
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
